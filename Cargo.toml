@@ -1,2 +1,7 @@
 [workspace]
 members = ["hackernews_tui", "config_parser", "config_parser_derive"]
+
+
+[profile.release]
+lto = "fat"
+codegen-units=1
